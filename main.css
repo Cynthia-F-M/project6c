@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color:black;
+	
+}
+#wrapper{
+	width:900px;
+	margin:0 auto;
+}
+
+
+.header {
+			padding:20px;
+			text-align:center;
+			margins:0 auto;
+			font-size: 50px;
+	        font-family:lust-script, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+	        color:rgb(179, 45, 0);
+			}
+
+nav{ 
+        width:25%;
+        height: 22px;
+	    text-align:center;
+	    font-family: lehmann, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+	    float:center;
+}
+nav a {
+	background-color: rgb(128, 64, 0);
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:3px;
+	padding-top:3px;
+	color:bisque;
+	display:inline-block;
+	border:solid;
+	border-color:white;
+		}
+		nav a:hover {
+	background-color:rgb(102, 153, 0);
+	color:black;
+}.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: main2; }
+.item5 { grid-area: main3; }
+.item6 { grid-area: main4; }
+.item7 { grid-area: main5; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu main2 main2 main2 main2 main2'
+	'menu main3 main3 main3 main3 main3'
+	'menu main4 main4 main4 main4 main4'
+	'menu main5 main5 main5 main5 main5';
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.grid-container > div {
+      background-color: gray;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 35px;
+      lex:70%;
+		border-color:rgb(179, 45, 0);
+		border-style:solid;
+		color:white;
+		font-family: lehmann, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+		letter-spacing:3px;
+		word-spacing:3px;
+}
+
+footer {
+	text-align:center;
+	font-family: lehmann, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	verticle-align:bottom;
+	color:white;
+	
+}
+
+.menu {
+			lex:70%;
+		background-color: gray;
+		border-color:rgb(179, 45, 0);
+		border-style:solid;
+		padding:100px;
+		text-align:center;
+		color:white;
+		font-family: lehmann, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+		font-size:45px;
+		letter-spacing:3px;
+		word-spacing:3px;
+		
+		}
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:800px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+@media screen and (max-width:700px)
+{}
